@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, MouseEvent } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { FaXbox, FaWindows, FaApple, FaLinux, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { SiPlaystation5, SiPlaystation4 } from "react-icons/si";
@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 
-const API_KEY = process.env.REACT_APP_RAWG_API_KEY;
+// const API_KEY = process.env.REACT_APP_RAWG_API_KEY;
 
 interface Platform {
   platform: {
@@ -91,7 +91,10 @@ const Discount: React.FC = () => {
     const fetchGames = async () => {
       try {
         const response = await fetch(
-          `https://api.rawg.io/api/games?key=${API_KEY}&dates=2016-01-01,2022-12-31&ordering=-added&page_size=40&genres=sports,action,arcade,racing`
+          // `https://api.rawg.io/api/games?key=${API_KEY}&dates=2016-01-01,2022-12-31&ordering=-added&page_size=40&genres=sports,action,arcade,racing`
+          // 6e2c3d10b67342d8a5dac993f10b5393
+          `https://api.rawg.io/api/games?key=6e2c3d10b67342d8a5dac993f10b5393&dates=2016-01-01,2022-12-31&ordering=-added&page_size=40&genres=sports,action,arcade,racing`
+
         );
         if (!response.ok) {
           throw new Error("Network response was not ok.");

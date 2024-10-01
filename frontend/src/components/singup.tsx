@@ -1,7 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../Assets/logo-no-background.png";
-import VideoBackground from "../Assets/HF .mp4";
+import Logo from "../assets/logo-no-background.png";
+import VideoBackground from "../assets/HF .mp4";
 
 interface FormData {
   username: string;

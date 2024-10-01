@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Logo from "../Assets/logo-no-background.png";
-import VideoBackground from "../Assets/Spider.mp4";
+import Logo from "../assets/logo-no-background.png";
+import VideoBackground from "../assets/Spider.mp4";
 import { Link } from 'react-router-dom';
-import LoginAudio from '../Assets/Metro Boomin, NAV, A Boogie wit da Hoodie, Swae Lee - Calling.mp3';
+import LoginAudio from '../assets/Metro Boomin, NAV, A Boogie wit da Hoodie, Swae Lee - Calling.mp3';
 
 const Login: React.FC = () => {
   const [audio] = useState<HTMLAudioElement>(new Audio(LoginAudio)); 

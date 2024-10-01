@@ -1,7 +1,7 @@
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
 import { Link } from "react-router-dom";
-import Logo from "./logo-no-background.png";
-import VideoBackground from "./pass.mp4";
+import Logo from "../../assets/logo-no-background.png";
+import VideoBackground from "../../assets/pass.mp4";
 
 interface FormData {
   currentPassword: string;
