@@ -1,6 +1,6 @@
 import React from "react";
 import Item from "./Item";
-import { PRODUCTS, RESOURCES, COMPANY, SUPPORT } from "./Menus";
+import { PRODUCTS, RESOURCES, COMPANY, SUPPORT } from "./Menu";
 
 // Assuming PRODUCTS, RESOURCES, COMPANY, and SUPPORT are arrays of links
 const ItemsContainer: React.FC = () => {

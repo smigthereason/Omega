@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 interface MenuProps {
   isOpen: boolean;
+  onClose: () => void;
 }
 
 interface MenuItem {
@@ -16,14 +17,18 @@ interface MenuItem {
   margin?: boolean;
 }
 
-const Menu: React.FC<MenuProps> = ({ isOpen }) => {
+const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
   const menus: MenuItem[] = [
-    { name: "dashboard", link: "/", icon: MdOutlineDashboard },
-    { name: "user", link: "/User", icon: AiOutlineUser },
+    { name: "Dashboard", link: "/", icon: MdOutlineDashboard },
+    { name: "User", link: "/user", icon: AiOutlineUser },
     { name: "Search", link: "/search", icon: FiSearch },
     { name: "Cart", link: "/cart", icon: FiShoppingCart },
     { name: "Settings", link: "/settings", icon: RiSettings4Line },
   ];
+
+  const handleMenuClick = () => {
+    onClose(); // Close the menu when a menu item is clicked
+  };
 
   return (
     <section className="flex gap-6">
@@ -37,6 +42,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen }) => {
             <Link
               to={menu.link}
               key={i}
+              onClick={handleMenuClick} // Trigger menu close on click
               className={`${
                 menu.margin && "mt-5"
               } group flex items-center text-sm gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-md`}

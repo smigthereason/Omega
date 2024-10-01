@@ -1,35 +1,68 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from "react";
+import Navbar from "./components/Navbar";
+import VideoBackground from "./assets/Home .mp4";
+import GameList from "./components/GameList";
+import Menu from "./components/Menu/Menu";
+import Discount from "./components/Discount";
+import Team from "./components/Team";
+import Sponsors from "./components/Sponsors";
+import "./App.css";
+import Footer from "./components/Footer";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+interface Game {
+  id: number;
+  title: string;
+  // Add other properties of the Game object if necessary
 }
 
-export default App
+const App: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [] = useState<Game[]>([]);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <div className="App">
+      <Navbar onMenuToggle={toggleMenu} />
+      <div className="flex">
+        <Menu isOpen={isMenuOpen} onClose={toggleMenu} />
+        <div className="flex-1">
+          <section className="video-section">
+            <video
+              src={VideoBackground}
+              autoPlay
+              loop
+              muted
+              className="video-background"
+            />
+            <div className="content-overlay text-white">
+              <h1 className="text-3xl text-center py-9">LATEST RELEASES</h1>
+              <div className="game-list-section px-4">
+                <GameList filteredGames={[]} />
+              </div>
+            </div>
+          </section>
+          <section className="discount-section">
+            <Discount />
+          </section>
+          <div className="content-overlay text-white">
+            <h1 className="text-3xl text-center py-9">MEET THE OMEGA TEAM</h1>
+            <div className="team-section px-8">
+              <Team />
+            </div>
+          </div>
+          <div>
+            <Sponsors />
+          </div>
+          <div>
+            <Footer />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;

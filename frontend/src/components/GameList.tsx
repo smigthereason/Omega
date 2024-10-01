@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Key } from "react";
 import { FaXbox, FaWindows, FaApple, FaLinux } from "react-icons/fa";
 import { SiPlaystation5, SiPlaystation4 } from "react-icons/si";
 import { BsNintendoSwitch, BsAndroid2 } from "react-icons/bs";
@@ -15,6 +15,7 @@ interface Genre {
 interface Platform {
   id: number;
   platform: {
+    id: Key | null | undefined;
     name: string;
   };
 }

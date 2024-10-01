@@ -1,10 +1,10 @@
 import React from "react";
-import TeamMember1 from "../Assets/tm-4.png";
-import TeamMember2 from "../Assets/tm-6.png";
-import TeamMember3 from "../Assets/tm-5.png";
-import TeamMember4 from "../Assets/tm-2.png";
-import TeamMember5 from "../Assets/tm-7.png";
-import TeamMember6 from "../Assets/tm-8.png";
+import TeamMember1 from "../assets/tm-4.png";
+import TeamMember2 from "../assets/tm-6.png";
+import TeamMember3 from "../assets/tm-5.png";
+import TeamMember4 from "../assets/tm-2.png";
+import TeamMember5 from "../assets/tm-7.png";
+import TeamMember6 from "../assets/tm-8.png";
 
 interface TeamMember {
   name: string;

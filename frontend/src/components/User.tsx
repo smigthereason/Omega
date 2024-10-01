@@ -9,7 +9,7 @@ interface UserProps {
   avatarUrl: string;
 }
 
-const User: React.FC<UserProps> = ({ username, email, avatarUrl }) => {
+const User: React.FC<UserProps> = ({  }) => {
   return (
     <div className="flex items-center justify-between border-black p-4 rounded-lg shadow-md text-white uppercase bg-black">
       <div className="flex flex-row">

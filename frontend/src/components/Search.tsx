@@ -16,6 +16,7 @@ interface Platform {
 }
 
 interface Game {
+  genres: any;
   id: number;
   name: string;
   released: string;

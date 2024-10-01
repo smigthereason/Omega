@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { cn } from '../Libs/utils';
+import { cn } from '../Libs/Util';
 
 interface TextWithMarqueeProps {
   children: React.ReactNode; // ReactNode covers any type of children including string, JSX, etc.
