@@ -30,16 +30,17 @@ const App: React.FC = () => {
         <Menu isOpen={isMenuOpen} onClose={toggleMenu} />
         <div className="flex-1">
           <section className="video-section">
-            <video
+            {/* <video
               src={VideoBackground}
               autoPlay
               loop
               muted
-              className="video-background"
-            />
+              className="background-video"
+            /> */}
             <div className="content-overlay text-white">
               <h1 className="text-3xl text-center py-9">LATEST RELEASES</h1>
               <div className="game-list-section px-4">
+                
                 <GameList filteredGames={[]} />
               </div>
             </div>

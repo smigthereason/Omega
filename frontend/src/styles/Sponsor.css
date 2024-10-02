@@ -1,0 +1,69 @@
+/* Slider component styles */
+.slider-component {
+    position: relative;
+    width: 80vw;
+    height: 60vh;
+    perspective: 1500px;  
+    overflow: hidden;  
+}
+
+/* Inner slider container */
+.slider-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: spin 10s infinite linear; 
+}
+
+/* Individual slide styles */
+.slide {
+    position: absolute;
+    width: 40%;  
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    transform: translate(-50%, -50%) rotateY(0deg) translateZ(600px);
+    display: flex;
+    align-items: flex-end;  
+    justify-content: center;  
+}
+
+/* Rotate each slide around the Y-axis to arrange them in a circle */
+.slide:nth-child(1) {
+    transform: translate(-50%, -50%) rotateY(0deg) translateZ(600px);
+}
+
+.slide:nth-child(2) {
+    transform: translate(-50%, -50%) rotateY(60deg) translateZ(600px);
+}
+
+.slide:nth-child(3) {
+    transform: translate(-50%, -50%) rotateY(120deg) translateZ(600px);
+}
+
+.slide:nth-child(4) {
+    transform: translate(-50%, -50%) rotateY(180deg) translateZ(600px);
+}
+
+.slide:nth-child(5) {
+    transform: translate(-50%, -50%) rotateY(240deg) translateZ(600px);
+}
+
+.slide:nth-child(6) {
+    transform: translate(-50%, -50%) rotateY(300deg) translateZ(600px);
+}
+
+
+/* Circular spinning animation */
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}

@@ -143,7 +143,7 @@ const Discount: React.FC = () => {
             style={{ maxWidth: "500px" }}
           >
             <div
-              className="relative overflow-hidden h-49 rounded-sm max-h-70"
+              className="relative overflow-hidden h-52 rounded-sm max-h-70"
               onMouseEnter={() => setHoveredGame(true)}
               onMouseLeave={() => setHoveredGame(false)}
             >
@@ -176,7 +176,7 @@ const Discount: React.FC = () => {
             </div>
 
             <div className="text-center text-white">
-              <h3 className="text-lg font-semibold mb-2 uppercase">
+              <h3 className="text-lg font-semibold mb-2 uppercase relative top-4">
                 {game.name}
               </h3>
               <div className="p-4">
