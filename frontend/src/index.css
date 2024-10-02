@@ -12,16 +12,13 @@ body {
   font-weight: 900;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(41, 41, 41);
+  background-color:linear-gradient(to bottom, #222048, #32274a, #3e2e4c, #48374e, #514051) !important;
   z-index: 10000;
   width:100vw;
   overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/*  */
 .App {
   position: relative;
  
@@ -58,7 +55,7 @@ code {
 }
 
 .game-list-section {
-  /* max-height: 800px;  */
+  max-height: 800px; 
   /* overflow-y: auto;  */
   overflow-x: hidden;
   scrollbar-width: none;

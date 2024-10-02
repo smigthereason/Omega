@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
-import VideoBackground from "./assets/Home .mp4";
+// import VideoBackground from "./assets/Home .mp4";
 import GameList from "./components/GameList";
 import Menu from "./components/Menu/Menu";
 import Discount from "./components/Discount";
@@ -55,6 +55,7 @@ const App: React.FC = () => {
             </div>
           </div>
           <div>
+          <h1 className=" text-white text-3xl text-center py-9">PROUD SPONSORS</h1>
             <Sponsors />
           </div>
           <div>

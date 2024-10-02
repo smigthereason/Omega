@@ -29,7 +29,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMenuToggle }) => {
           <img
             src={Logo}
             alt="Logo"
-            className="h-20 w-auto mt-8 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+            className="relative bottom-4 left-6 h-20 w-auto mt-6 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
           />
         </Link>
 
