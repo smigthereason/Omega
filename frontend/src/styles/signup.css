@@ -1,0 +1,60 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .card {
+    width: 35vw;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.712);
+    border-radius: 0.75rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    height: 90vh;
+
+  }
+  .lg {
+    position: relative;
+    left: 12vw;
+    margin: 10px;
+  }
+  .lg img {
+    height: 12vh;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  .f1, .f2, .f3, .f4{
+    position: relative;
+    left: 3vw;
+    padding: 0.5rem;
+    width: 25vw;
+  }
+  label{
+    display: block;
+    color: rgba(133, 132, 132, 0.849);
+    font-size: 2.5vh;
+    font-weight: bold;
+    text-align: center;
+  }
+  input {
+    box-shadow: 0 2px 4px rgba(235, 235, 235, 0.1);
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    width: 20vw;
+    padding: 0.5rem 0.75rem;
+    color: #4a5568;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(19, 19, 19, 0.575);
+  }
+  input::placeholder {
+    text-align: center;
+  }

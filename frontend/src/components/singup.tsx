@@ -2,6 +2,7 @@ import React, { useState, ChangeEvent, FormEvent } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo-no-background.png";
 import VideoBackground from "../assets/HF .mp4";
+import "../styles/signup.css"
 
 interface FormData {
   username: string;
@@ -53,18 +54,17 @@ const SignupPage: React.FC = () => {
         />
 
         <div className="flex items-center justify-center bg-cover h-screen">
-          <div className="w-11/12 md:w-2/3 lg:w-1/2 xl:w-1/3 bg-transparent bg-opacity-60 backdrop-blur-lg shadow-lg rounded-lg overflow-hidden px-8 pt-6 pb-8 mb-4">
-            <Link to="/" className="flex items-center text-white ml-28 px-10 py-8">
+          <div className="card">
+            <Link to="/" className="lg">
               <img
                 src={Logo}
                 alt="Logo"
-                className="h-14 w-auto transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
               />
             </Link>
 
-            <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-              <div className="mb-4">
-                <label htmlFor="username" className="block mb-1">
+            <form onSubmit={handleSubmit} className="form">
+              <div className="f1">
+                <label htmlFor="username" >
                   Username
                 </label>
                 <input
@@ -73,12 +73,11 @@ const SignupPage: React.FC = () => {
                   name="username"
                   value={formData.username}
                   onChange={handleChange}
-                  className="border p-2 w-full rounded-xl"
                   required
                 />
               </div>
-              <div className="mb-4">
-                <label htmlFor="email" className="block mb-1">
+              <div className="f2">
+                <label htmlFor="email" >
                   Email
                 </label>
                 <input
@@ -87,12 +86,12 @@ const SignupPage: React.FC = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="border p-2 w-full rounded-xl"
+                  className=""
                   required
                 />
               </div>
-              <div className="mb-4">
-                <label htmlFor="password" className="block mb-1">
+              <div className="f3">
+                <label htmlFor="password" >
                   Password
                 </label>
                 <input
@@ -101,12 +100,11 @@ const SignupPage: React.FC = () => {
                   name="password"
                   value={formData.password}
                   onChange={handleChange}
-                  className="border p-2 w-full rounded-xl"
                   required
                 />
               </div>
-              <div className="mb-4">
-                <label htmlFor="confirmPassword" className="block mb-1">
+              <div className="f4">
+                <label htmlFor="confirmPassword" >
                   Confirm password
                 </label>
                 <input
@@ -115,13 +113,12 @@ const SignupPage: React.FC = () => {
                   name="confirmPassword"
                   value={formData.confirmPassword}
                   onChange={handleChange}
-                  className="border p-2 w-full rounded-xl"
                   required
                 />
               </div>
               <button
                 type="submit"
-                className="ml-36 text-white py-2 px-4 rounded hover:bg-gray-300"
+                className="press"
               >
                 Sign Up
               </button>

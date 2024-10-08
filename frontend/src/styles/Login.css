@@ -65,7 +65,7 @@ img:hover {
 
 .input:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgb(80, 80, 99);
+  box-shadow: 0 0 0 3px rgb(14, 14, 15);
 }
 input::placeholder {
   text-align: center;
