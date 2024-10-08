@@ -5,8 +5,8 @@ import { Icons } from "./Footer/Menu";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white">
-      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
+    <footer className=" text-white">
+      <div className=" title md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7  rounded-lg">
         <h1
           className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold
          md:w-2/5"
@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <span className="text-teal-400">Free</span> until you're ready to
           launch
         </h1>
-        <div>
+        <div className="relative right-2">
           <input
             type="text"
             placeholder="Enter Your ph.no"

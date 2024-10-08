@@ -134,7 +134,7 @@ const Discount: React.FC = () => {
   };
 
   return (
-    <div className="overflow-x-auto w-screen">
+    <div className="overflow-x-auto ">
       <div className="flex gap-4 p-4">
         {games.map((game) => (
           <div

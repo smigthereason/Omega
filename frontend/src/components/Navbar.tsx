@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMenuToggle }) => {
   };
 
   return (
-    <nav className="bg-black w-auto">
+    <nav className="w-auto">
       <div className="container flex items-center justify-between mx-3">
         <div className="flex items-center px-2 py-2">
           <HiMenuAlt1

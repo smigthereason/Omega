@@ -14,7 +14,7 @@ const Settings: React.FC = () => {
   return (
     <div className="container mx-auto py-8 h-screen">
       <div className="flex w-auto h-screen">
-        <div className="bg-black rounded-lg p-6 w-full">
+        <div className=" rounded-lg p-6 w-full">
           <h4 className="font-bold text-lg mb-4 uppercase text-white">
             Account settings
           </h4>

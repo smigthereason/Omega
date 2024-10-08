@@ -33,7 +33,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
   return (
     <section className="flex gap-6">
       <div
-        className={`bg-[#000000] min-h-screen ${
+        className={`min-h-screen ${
           isOpen ? "w-72" : "w-16"
         } duration-500 text-gray-100 px-4`}
       >
@@ -45,7 +45,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
               onClick={handleMenuClick} // Trigger menu close on click
               className={`${
                 menu.margin && "mt-5"
-              } group flex items-center text-sm gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-md`}
+              } group flex items-center text-sm gap-3.5 font-medium p-2  rounded-md hover:-translate-y-1 hover:scale-110 duration-300`}
             >
               <div>{React.createElement(menu.icon, { size: "20" })}</div>
               <h2

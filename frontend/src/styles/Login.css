@@ -1,0 +1,88 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.card-holder {
+  width: 35vw;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.712);
+  border-radius: 0.75rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1rem;
+}
+.logo-1 {
+  position: relative;
+  left: 11.5vw;
+  margin: 10px;
+}
+.container .container2 {
+  padding: 2rem;
+  width: 25vw;
+  height: 15vh;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.logo-1 img {
+  height: 12vh;
+  width: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: translateY(-0.25rem) scale(1.1);
+}
+
+.head {
+  display: block;
+  color: rgba(133, 132, 132, 0.849);
+  font-size: 2.5vh;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.input {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  width: 20vw;
+  padding: 0.5rem 0.75rem;
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(80, 80, 99);
+}
+input::placeholder {
+  text-align: center;
+}
+.press {
+  margin-top: 3vh;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.press:hover {
+  transform: translateY(-0.25rem) scale(1.1);
+}
+
+.press:focus {
+  outline: none;
+}
